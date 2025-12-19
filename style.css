@@ -854,6 +854,7 @@ img {
 
 .form-group label {
   display: block;
+  align-items: center
   font-weight: 600;
   color: var(--terracotta-strong);
   margin-bottom: var(--spacing-xs);
