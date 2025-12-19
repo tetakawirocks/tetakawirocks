@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Memoria Amorosa - Crucita Hernández | Día de las Madres</title>
+    <meta name="description" content="Página conmemorativa en honor a Crucita Hernández, madre, abuela y pilar de nuestra familia">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Variables CSS */
+        :root {
+            --primary-900: #1A4D3F;
+            --primary-700: #2C6E5A;
+            --primary-500: #4A9D85;
+            --secondary-500: #6BA3B7;
+            --secondary-200: #D4E6EB;
+            --surface-card: #FFFFFF;
+            --page-bg: #F9F7F2;
+            --text-body: #374151;
+            --text-muted: #6B7280;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Lato', sans-serif;
+            --space-xs: 8px;
+            --space-md: 16px;
+            --space-xl: 32px;
+            --space-3xl: 64px;
+            --section-gap: 96px;
+            --section-gap-mobile: 64px;
+        }
+        
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--page-bg);
+            color: var(--text-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background-image: linear-gradient(
+                rgba(26, 77, 63, 0.3),
+                rgba(26, 77, 63, 0.8)
+            ), url('crucita_family_celebration.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            /* Fallback color if image doesn't load */
+            background-color: #2C6E5A;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: var(--space-xl);
+            animation: fadeInUp 1000ms ease-out;
+        }
+        
+        .hero-subtitle {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: var(--space-md);
+            opacity: 0.9;
+        }
+        
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: clamp(48px, 8vw, 72px);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: var(--space-md);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-description {
+            font-family: var(--font-serif);
+            font-size: clamp(18px, 3vw, 24px);
+            font-style: italic;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: var(--section-gap) var(--space-xl);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Mother's Day Card */
+        .mothers-day-card {
+            background: var(--surface-card);
+            border-radius: 12px;
+            padding: var(--space-3xl);
+            margin: 0 auto var(--section-gap);
+            max-width: 800px;
+            box-shadow: 0 10px 40px -10px rgba(26, 77, 63, 0.1);
+            text-align: center;
+            transition: transform 400ms ease;
+        }
+        
+        .mothers-day-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .flower-svg {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto var(--space-xl);
+            fill: var(--primary-500);
+        }
+        
+        .mothers-day-title {
+            font-family: var(--font-serif);
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 600;
+            color: var(--primary-900);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .mothers-day-message {
+            font-family: var(--font-serif);
+            font-size: clamp(20px, 3vw, 28px);
+            font-style: italic;
+            color: var(--primary-700);
+            line-height: 1.4;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .mothers-day-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-body);
+        }
+        
+        /* Tribute Section */
+        .tribute-section {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+        
+        .tribute-title {
+            font-family: var(--font-serif);
+            font-size: clamp(36px, 6vw, 48px);
+            font-weight: 600;
+            color: var(--primary-900);
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+        
+        .tribute-content {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        .tribute-content p {
+            margin-bottom: var(--space-3xl);
+            text-align: justify;
+        }
+        
+        .tribute-content p:first-letter {
+            font-family: var(--font-serif);
+            font-size: 3em;
+            font-weight: 700;
+            color: var(--primary-700);
+            float: left;
+            line-height: 1;
+            margin: 8px 8px 0 0;
+        }
+        
+        .tribute-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: var(--space-3xl) 0;
+        }
+        
+        .divider-line {
+            flex: 1;
+            height: 1px;
+            background: var(--secondary-200);
+        }
+        
+        .divider-heart {
+            color: var(--primary-500);
+            width: 24px;
+            height: 24px;
+            margin: 0 var(--space-md);
+            fill: var(--primary-500);
+        }
+        
+        /* Quote Section */
+        .quote-section {
+            background: var(--surface-card);
+            border-radius: 12px;
+            padding: var(--space-3xl);
+            margin: var(--section-gap) auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 10px 40px -10px rgba(26, 77, 63, 0.1);
+        }
+        
+        .quote-text {
+            font-family: var(--font-serif);
+            font-size: clamp(20px, 3vw, 28px);
+            font-style: italic;
+            color: var(--primary-700);
+            line-height: 1.4;
+            margin-bottom: var(--space-md);
+        }
+        
+        .quote-author {
+            font-size: 16px;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: var(--section-gap) var(--space-xl);
+            color: var(--text-muted);
+            border-top: 1px solid var(--secondary-200);
+            margin-top: var(--section-gap);
+        }
+        
+        .footer-text {
+            font-size: 14px;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 800ms ease-out;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 70vh;
+                min-height: 500px;
+            }
+            
+            .main-content {
+                padding: var(--section-gap-mobile) var(--space-md);
+            }
+            
+            .mothers-day-card,
+            .quote-section {
+                padding: var(--space-xl);
+            }
+            
+            .tribute-section {
+                padding: 0 var(--space-md);
+            }
+            
+            .hero-content {
+                padding: var(--space-md);
+            }
+            
+            .mothers-day-title,
+            .tribute-title {
+                font-size: 32px;
+            }
+            
+            .mothers-day-message {
+                font-size: 20px;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* Decorative elements */
+        .decorative-corner {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='https://www.w3.org/2000/svg'%3E%3Cpath d='M100 20 Q120 40 140 60 Q160 80 180 100 L180 20 Z' fill='%234A9D85' opacity='0.05'/%3E%3Cpath d='M100 180 Q80 160 60 140 Q40 120 20 100 L100 100 Z' fill='%236BA3B7' opacity='0.05'/%3E%3C/svg%3E") no-repeat;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .corner-top-right {
+            top: 0;
+            right: 0;
+        }
+        
+        .corner-bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative corners -->
+    <div class="decorative-corner corner-top-right"></div>
+    <div class="decorative-corner corner-bottom-left"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-subtitle">En Memoria Amorosa</div>
+            <h1 class="hero-title">Crucita Hernández</h1>
+            <p class="hero-description">Madre, Abuela y Pilar de nuestra familia</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Mother's Day Card -->
+            <div class="mothers-day-card fade-in-up">
+                <!-- Flower SVG -->
+                <svg class="flower-svg" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                
+                <h2 class="mothers-day-title">Día de las Madres</h2>
+                <p class="mothers-day-message">
+                    "En cada viaje, en cada paisaje y en cada sonrisa compartida,<br>
+                    tu presencia sigue siendo nuestro lugar favorito."
+                </p>
+                <p class="mothers-day-text">
+                    Hoy celebramos tu memoria y honramos tu legado como madre extraordinaria. 
+                    Tu amor fue el cimiento sobre el cual construimos nuestra familia, y tu sabiduría 
+                    sigue guiándonos en cada paso que damos.
+                </p>
+            </div>
+
+            <!-- Tribute Section -->
+            <section class="tribute-section fade-in-up">
+                <h2 class="tribute-title">Un Tributo de Amor</h2>
+                <div class="tribute-content">
+                    <p>
+                        Crucita Hernández fue mucho más que una madre; fue el corazón pulsante de una familia 
+                        unida. Su presencia llenaba cada espacio con calidez, y su risa contagiosa convertía 
+                        cualquier momento ordinario en una celebración de la vida.
+                    </p>
+                    
+                    <div class="tribute-divider">
+                        <div class="divider-line"></div>
+                        <!-- Heart SVG -->
+                        <svg class="divider-heart" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <div class="divider-line"></div>
+                    </div>
+                    
+                    <p>
+                        Su espíritu aventurero la llevaba a descubrir nuevos lugares junto a los suyos, 
+                        creando recuerdos que perduran más allá del tiempo. En la fotografía que ahora 
+                        contemplamos, la vemos rodeada de su familia, en perfecta armonía con la naturaleza, 
+                        como ella lo era con todos nosotros.
+                    </p>
+                    
+                    <div class="tribute-divider">
+                        <div class="divider-line"></div>
+                        <!-- Heart SVG -->
+                        <svg class="divider-heart" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <div class="divider-line"></div>
+                    </div>
+                    
+                    <p>
+                        Cada día del año es una oportunidad para recordar su amor, su fuerza y su dedicación. 
+                        Pero en este Día de las Madres, renovamos nuestro compromiso de mantener viva su 
+                        memoria y de llevar adelante los valores que nos enseñó con tanto amor.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Quote Section -->
+            <div class="quote-section fade-in-up">
+                <p class="quote-text">
+                    "Una madre es quien nos enseña a amar,<br>
+                    a soñar y a alcanzar las estrellas."
+                </p>
+                <p class="quote-author">Con todo nuestro amor, hoy y siempre</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            "Las madres viven eternamente en el amor que sembraron en nuestros corazones"<br>
+            <strong>En memoria amorosa de Crucita Hernández</strong>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Image loading check
+        function checkImageLoad() {
+            const img = new Image();
+            img.onload = function() {
+                console.log('✅ Imagen cargada correctamente');
+            };
+            img.onerror = function() {
+                console.log('❌ Error cargando imagen');
+                console.log('Ruta de imagen:', img.src);
+                // Try alternative path
+                const altImg = new Image();
+                altImg.onload = function() {
+                    console.log('✅ Imagen cargada con ruta alternativa');
+                    document.querySelector('.hero-section').style.backgroundImage = 
+                        `linear-gradient(rgba(26, 77, 63, 0.3), rgba(26, 77, 63, 0.8)), url('./crucita_family_celebration.jpg')`;
+                };
+                altImg.onerror = function() {
+                    console.log('❌ Error con ruta alternativa también');
+                };
+                altImg.src = './crucita_family_celebration.jpg';
+            };
+            img.src = 'crucita_family_celebration.jpg';
+        }
+        
+        // Run image check when page loads
+        window.addEventListener('load', checkImageLoad);
+        
+        // Animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Setup animations
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 800ms ease, transform 800ms ease';
+            observer.observe(el);
+        });
+        
+        // Respect reduced motion
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            });
+        }
+        
+        console.log('Página de Crucita Hernández cargada correctamente');
+    </script>
+</body>
+</html>
