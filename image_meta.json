@@ -1,0 +1,47 @@
+[
+  {
+    "query": "Fotografía oficial o profesional de Crucita Hernández para sitio conmemorativo",
+    "image_info": {
+      "url": "https://phantom-marca-mx.unidadeditorial.es/07f5f22f9a23cce16f4bb4329e4e0b75/resize/828/f/jpg/mx/assets/multimedia/imagenes/2024/01/28/17064122318156.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 90464,
+      "width": 828,
+      "height": 552,
+      "total_pixels": 457056,
+      "basic_score": 0.8438851853668964,
+      "file_name": "crucita_profile_photo_2.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Fotografía oficial o profesional de Crucita Hernández para sitio conmemorativo",
+    "image_info": {
+      "url": "https://phantom-marca-mx.unidadeditorial.es/97b724554baa992056ace2fbd2e6d788/resize/828/f/jpg/mx/assets/multimedia/imagenes/2024/03/03/17094370218961.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 83278,
+      "width": 828,
+      "height": 552,
+      "total_pixels": 457056,
+      "basic_score": 0.8430326375725902,
+      "file_name": "crucita_profile_photo_5.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Fotografía oficial o profesional de Crucita Hernández para sitio conmemorativo",
+    "image_info": {
+      "url": "https://tvazteca.brightspotcdn.com/dims4/default/de1dd51/2147483647/strip/true/crop/3955x2667+22+0/resize/740x499!/format/webp/quality/70/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F88%2Fee%2F49784c1b46689b10f04dc96426f3%2F20251130-13106.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 20380,
+      "width": 740,
+      "height": 499,
+      "total_pixels": 369260,
+      "basic_score": 0.8176633440035279,
+      "file_name": "crucita_profile_photo_7.jpg"
+    },
+    "llm_score": null
+  }
+]
