@@ -772,6 +772,7 @@ img {
   width: 100%;
   text-align: center;
 }
+
 .contact-content {
   display: grid;
   grid-template-columns: 1fr;
