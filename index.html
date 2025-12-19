@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizbeth Avena Hernández - Geóloga Profesional</title>
+    <meta name="description" content="Geóloga bilingüe con más de 7 años de experiencia en wellsite geology, mudlogging y compliance ambiental en Estados Unidos y México.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i data-lucide="mountain" class="logo-icon"></i>
+                <span class="logo-text">Lizbeth Avena</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#especialidades" class="nav-link">Especialidades</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            
+            <div class="nav-lang">
+                <button class="lang-toggle active" data-lang="es">ES</button>
+                <button class="lang-toggle" data-lang="en">EN</button>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="stars-canvas" id="stars-canvas"></div>
+        <div class="desert-silhouette"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Lizbeth Avena Hernández</h1>
+            <p class="hero-subtitle">MSc Ciencias de la Tierra | Geóloga Profesional</p>
+            <p class="hero-description">Geóloga bilingüe con más de 7 años de experiencia en wellsite geology, mudlogging y compliance ambiental en Estados Unidos y México</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contacto')">
+                    <i data-lucide="mail" class="btn-icon"></i>
+                    Contactar
+                </button>
+                <button class="btn btn-secondary" onclick="downloadCV()">
+                    <i data-lucide="download" class="btn-icon"></i>
+                    Descargar CV
+                </button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down" class="scroll-arrow"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Conectando la ciencia con la tierra</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i data-lucide="user" class="card-icon"></i>
+                            <h3>Perfil Profesional</h3>
+                        </div>
+                        <p>Geóloga bilingüe y especialista ambiental con más de 7 años de amplia experiencia de campo en Estados Unidos y México. Expertise comprobada en wellsite geology, mudlogging, compliance ambiental y remediación de sitios.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i data-lucide="graduation-cap" class="card-icon"></i>
+                            <h3>Formación Académica</h3>
+                        </div>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <strong>Master en Ciencias de la Tierra</strong>
+                                <span class="edu-institution">Universidad Nacional Autónoma de México</span>
+                                <span class="edu-specialty">Geoquímica y Petrología del complejo gabróico de Manzanillo, Colima</span>
+                            </div>
+                            <div class="education-item">
+                                <strong>Ingeniería en Minas y Metalurgia</strong>
+                                <span class="edu-institution">Universidad Autónoma de Chihuahua</span>
+                                <span class="edu-specialty">Licencia Profesional MX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i data-lucide="globe" class="card-icon"></i>
+                            <h3>Experiencia Internacional</h3>
+                        </div>
+                        <p>Proyectos de recolección de datos para compañías mineras en diferentes proyectos de México y Estados Unidos, incluyendo proyectos en Arizona, Nevada, Oregon y múltiples estados mexicanos.</p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="271730049_10226396498077306_7707498595045620983_n.jpg" alt="Lizbeth Avena en sitio histórico" class="profile-img">
+                    <div class="img-caption">
+                        <i data-lucide="camera" class="caption-icon"></i>
+                        <span>Explorando patrimonio geológico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <p class="section-subtitle">Más de 7 años en geología aplicada</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Especialista en Transferencia de Agua y Ambiental</h3>
+                            <span class="exp-meta">Octubre 2023 - Diciembre 2023</span>
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag">Inspecciones Ambientales</span>
+                            <span class="tag">Medición de Calidad de Agua</span>
+                            <span class="tag">Operación de Bombas</span>
+                            <span class="tag">Gestión de Líneas</span>
+                        </div>
+                        <p class="exp-description">Realización de inspecciones ambientales en sitios de fracturación, medición y transferencia de calidad de agua, operación de bombas centrífugas y sumergibles para operaciones de fracturación hidráulica.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Geóloga de Campo - Servicios Ambientales</h3>
+                            <span class="exp-meta">Octubre 2022 - Octubre 2023</span>
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag">Compliance Ambiental</span>
+                            <span class="tag">Perforación y Monitoreo</span>
+                            <span class="tag">Muestreo</span>
+                            <span class="tag">Calibración de Equipos</span>
+                        </div>
+                        <p class="exp-description">Supervisión de operaciones de perforación y logging en suelos, muestreo de agua, suelo y vapor, mantenimiento de equipos PID y estaciones de vacío para limpieza, construcción de bombas de vacío para limpieza de suelos.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Operador MWD/Mudlogger - Geóloga de Pozos</h3>
+                            <span class="exp-meta">2008 - 2021</span>
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag">Gestión de Unidades</span>
+                            <span class="tag">Logging Geológico</span>
+                            <span class="tag">Formaciones</span>
+                            <span class="tag">Software Especializado</span>
+                        </div>
+                        <p class="exp-description">Gestión de unidades de mudlogging en Permian Basin, logging de formaciones Bone Spring y Wolfcamp, operación de software Noralis, gestión de inventario y reportes de incidentes.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">Auditor Técnico Experto - Certificaciones</h3>
+                            <span class="exp-meta">Junio 2020 - Actual</span>
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag">ISO 9001</span>
+                            <span class="tag">ISO 17025</span>
+                            <span class="tag">NACE</span>
+                            <span class="tag">Laboratorios</span>
+                        </div>
+                        <p class="exp-description">Recalificado como Experto Técnico en Química desde julio 2020. Auditorías ISO 9001 e ISO 17025 para laboratorios de ensayo y acreditación NACE.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="especialidades" class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Especialidades y Certificaciones</h2>
+                <p class="section-subtitle">Expertise técnico y competencias certificadas</p>
+            </div>
+            
+            <div class="specialties-grid">
+                <div class="specialties-column">
+                    <h3 class="column-title">
+                        <i data-lucide="cpu" class="column-icon"></i>
+                        Software y Herramientas
+                    </h3>
+                    <div class="software-grid">
+                        <div class="software-item">
+                            <i data-lucide="map" class="software-icon"></i>
+                            <span>ArcGIS</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="layers" class="software-icon"></i>
+                            <span>QGIS</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="ruler" class="software-icon"></i>
+                            <span>AutoCAD</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="globe" class="software-icon"></i>
+                            <span>Global Mapper</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="database" class="software-icon"></i>
+                            <span>Kingdom Suite</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="activity" class="software-icon"></i>
+                            <span>Mainlog</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="compass" class="software-icon"></i>
+                            <span>Zone Vu</span>
+                        </div>
+                        <div class="software-item">
+                            <i data-lucide="file-text" class="software-icon"></i>
+                            <span>TLog</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specialties-column">
+                    <h3 class="column-title">
+                        <i data-lucide="award" class="column-icon"></i>
+                        Certificaciones de Seguridad
+                    </h3>
+                    <div class="certifications-list">
+                        <div class="cert-item">
+                            <i data-lucide="shield-check" class="cert-icon"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">HAZWOPER 40 horas</span>
+                                <span class="cert-status">Vigente 2023</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="shield-check" class="cert-icon"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">OSHA 30 horas</span>
+                                <span class="cert-status">Certificado</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="shield-check" class="cert-icon"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">Safeland</span>
+                                <span class="cert-status">Vigente 2024</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="shield-check" class="cert-icon"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">CSX Roadway Worker Protection</span>
+                                <span class="cert-status">Vigente 2025-2026</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="shield-check" class="cert-icon"></i>
+                            <div class="cert-details">
+                                <span class="cert-name">DOT Physical Certificate</span>
+                                <span class="cert-status">Expira 01/26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="competencies">
+                <h3 class="competencies-title">Competencias Técnicas</h3>
+                <div class="competencies-grid">
+                    <div class="comp-category">
+                        <h4>Exploración y Producción</h4>
+                        <ul>
+                            <li>Mapeo de minas a cielo abierto y subterráneas</li>
+                            <li>Muestreo de suelos y control de calidad</li>
+                            <li>Geoesteering y mudlogging</li>
+                            <li>Logging de pozos (MWD/LWD)</li>
+                        </ul>
+                    </div>
+                    <div class="comp-category">
+                        <h4>Análisis y Laboratorio</h4>
+                        <ul>
+                            <li>Contaje de puntos en secciones delgadas</li>
+                            <li>Modelado geoquímico de procesos ígneos</li>
+                            <li>Separación de isótopos por columnas iónicas</li>
+                            <li>Análisis XRF</li>
+                        </ul>
+                    </div>
+                    <div class="comp-category">
+                        <h4>Compliance y Auditoría</h4>
+                        <ul>
+                            <li>Auditorías ISO 9001 & ISO 17025</li>
+                            <li>Inspección de sitios de construcción</li>
+                            <li>Remediación ambiental</li>
+                            <li>Gestión de permisos ambientales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galería de Campo</h2>
+                <p class="section-subtitle">Experiencias en terreno geológico</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="471142959_10234178256696408_6864636486210771268_n.jpg" alt="Trabajo de campo en formación rocosa">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i data-lucide="mountain" class="overlay-icon"></i>
+                            <span>Trabajo de campo - Evaluación geológica</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="454449338_1578296276068505_1021909383614928822_n.jpg" alt="Exploración en paisaje volcánico">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i data-lucide="volcano" class="overlay-icon"></i>
+                            <span>Exploración volcánica</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="470576353_10234177888647207_1058221734017669969_n.jpg" alt="Vista de volcán activo con estratigrafía">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i data-lucide="layers" class="overlay-icon"></i>
+                            <span>Estratigrafía volcánica activa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="470670748_10234178040210996_3515250504001427585_n.jpg" alt="Montañismo y exploración">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i data-lucide="trekking" class="overlay-icon"></i>
+                            <span>Exploración de alta montaña</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="471150836_10234178287457177_7089731263213692184_n.jpg" alt="Trabajo en terreno">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i data-lucide="hard-hat" class="overlay-icon"></i>
+                            <span>Trabajo de campo especializado</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="471239756_10234178235415876_628431448710006861_n.jpg" alt="Exploración geológica">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i data-lucide="compass" class="overlay-icon"></i>
+                            <span>Exploración geológica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">Conectemos para proyectos geológicos</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Teléfono</span>
+                            <span class="contact-value">+1 (510) 421-1524</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">lizbeth.avenita@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i data-lucide="globe" class="contact-icon"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Idiomas</span>
+                            <span class="contact-value">Español (Nativo) | English (Fluent)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Ubicación</span>
+                            <span class="contact-value">Estados Unidos & México</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i data-lucide="send" class="btn-icon"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lizbeth Avena Hernández</h3>
+                <p>Geóloga Profesional | MSc Ciencias de la Tierra</p>
+                <p>Especializada en wellsite geology, mudlogging y compliance ambiental</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Especialidades</h4>
+                <ul>
+                    <li>Wellsite Geology</li>
+                    <li>Mudlogging</li>
+                    <li>Environmental Compliance</li>
+                    <li>Geofísica Aplicada</li>
+                    <li>QA/QC Minero</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Certificaciones</h4>
+                <ul>
+                    <li>HAZWOPER 40hrs</li>
+                    <li>OSHA 30hrs</li>
+                    <li>Safeland Certified</li>
+                    <li>ISO 9001 & 17025 Auditor</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lizbeth Avena Hernández. Todos los derechos reservados.</p>
+            <p>Diseñado con precisión geológica en el espíritu del Desierto de Sonora</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <span id="lightbox-caption-text"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
