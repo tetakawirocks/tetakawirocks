@@ -745,8 +745,7 @@ img {
 
 /* ===== CONTACT SECTION ===== */
 .contact {
-
-  background-color: var(--surface-light);
+background-color: var(--surface-light);
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
@@ -759,7 +758,7 @@ img {
 #contact p,
 #contact .contact-item {
     text-align: center;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 }
 .linkedin-badge-container {
