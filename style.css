@@ -124,7 +124,7 @@ img {
 
 }
 .section-title {
-  text-align: center !important;  ← ADD THIS LINE
+  text-align: center !important;  
   font-family: var(--font-heading);
   font-size: 48px;
   font-weight: 700;
@@ -133,7 +133,7 @@ img {
 }
 
 .section-subtitle {
-  text-align: center !important;  ← ADD THIS LINE
+  text-align: center !important;  
   font-family: var(--font-heading);
   font-size: 18px;
   font-style: italic;
