@@ -126,7 +126,7 @@ img {
 .section-title {
   text-align: center !important;  
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 80px;
   font-weight: 700;
   color: var(--night-sky);
   margin-bottom: var(--spacing-sm);
