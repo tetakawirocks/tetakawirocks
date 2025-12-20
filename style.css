@@ -745,8 +745,13 @@ img {
 
 /* ===== CONTACT SECTION ===== */
 .contact {
-  padding: var(--spacing-3xl) 0;
+
   background-color: var(--surface-light);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
 }
 .linkedin-badge-container {
   display: flex;
