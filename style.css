@@ -122,7 +122,9 @@ img {
   margin-bottom: var(--spacing-3xl);
 }
 
+}
 .section-title {
+  text-align: center !important;  ← ADD THIS LINE
   font-family: var(--font-heading);
   font-size: 48px;
   font-weight: 700;
@@ -131,6 +133,7 @@ img {
 }
 
 .section-subtitle {
+  text-align: center !important;  ← ADD THIS LINE
   font-family: var(--font-heading);
   font-size: 18px;
   font-style: italic;
