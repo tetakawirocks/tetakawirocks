@@ -753,6 +753,15 @@ img {
     padding: 20px;
 }
 }
+
+/* Center individual elements */
+#contact h2,
+#contact p,
+#contact .contact-item {
+    text-align: center;
+    margin: 10px auto;
+}
+}
 .linkedin-badge-container {
   display: flex;
   align-items: center;
