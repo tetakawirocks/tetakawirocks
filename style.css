@@ -828,7 +828,7 @@ img {
 }
 
 .contact-label {
-  display: block;
+  display: block-centered;
   font-weight: 600;
   color: var(--terracotta-strong);
   font-size: 14px;
@@ -837,7 +837,7 @@ img {
 }
 
 .contact-value {
-  display: block;
+  display: block-centered;
   color: var(--volcanic-grey);
   margin-top: 2px;
 }
@@ -853,7 +853,7 @@ img {
 }
 
 .form-group label {
-  display: block;
+  display: block-centered;
   align-items: center
   font-weight: 600;
   color: var(--terracotta-strong);
@@ -862,6 +862,7 @@ img {
 
 .form-group input,
 .form-group textarea {
+  align-items:center
   width: 100%;
   padding: var(--spacing-sm);
   border: 1px solid var(--border-subtlety);
