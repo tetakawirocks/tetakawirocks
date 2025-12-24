@@ -51,9 +51,7 @@ Estos son los **5 archivos finales** que contienen todas las correcciones y nuev
 - ✅ Corregido para evitar plugins de navegador que lo ofusquen
 - ✅ Ahora dice "Contact Me" en lugar del email directo
 
-## 🚫 **NO necesitas reemplazar:**
-- **Imágenes** (ya las tienes en tu repositorio)
-- **Otros archivos CSS/JS** (si los tienes)
+
 
 ## 📋 **Resumen:**
 Solo estos **5 archivos** contienen todas las correcciones y nuevas funcionalidades implementadas.
