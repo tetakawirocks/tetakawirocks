@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geochemistry - Tetakawi Rocks</title>
+    <meta name="description" content="Geochemistry section showcasing coal and mineral species geochemical analysis. Choose between Coal Geochemistry or Mineral Species Geochemistry.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="geochemistry-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i data-lucide="mountain" class="logo-icon"></i>
+                <span class="logo-text">Tetakawi Rocks</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About Me</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#specialties" class="nav-link">Specialties</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="geochemistry.html" class="nav-link active">Geochemistry</a>
+                <a href="chihuahua.html" class="nav-link">Chihuahua Geology</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="geo-hero">
+        <div class="geo-hero-content">
+            <h1 class="geo-hero-title">Geochemistry</h1>
+            <p class="geo-hero-subtitle">Select a geochemistry specialization</p>
+            <p class="geo-hero-description">Choose between Coal Geochemistry or Mineral Species Geochemistry to explore technical diagrams and analytical methods</p>
+        </div>
+    </section>
+
+    <!-- Selection Grid -->
+    <section class="geo-section">
+        <div class="container">
+            <div class="selection-grid">
+                <!-- Coal Geochemistry Card -->
+                <a href="geoquimica.html" class="selection-card">
+                    <div class="selection-icon">
+                        <i data-lucide="file-coal" style="width: 64px; height: 64px;"></i>
+                    </div>
+                    <h2 class="selection-title">Coal Geochemistry</h2>
+                    <p class="selection-subtitle">Geoquímica del Carbón</p>
+                    <p class="selection-description">Technical diagrams including ASTM classification, maceral ternary plots, Van Krevelen diagrams, thermal maturation trends, and atomic ratio analysis for organic matter characterization.</p>
+                    <div class="selection-btn">
+                        <span>View Diagrams</span>
+                        <i data-lucide="arrow-right" style="width: 20px; height: 20px;"></i>
+                    </div>
+                </a>
+
+                <!-- Mineral Species Geochemistry Card -->
+                <a href="mineral_geochemistry.html" class="selection-card">
+                    <div class="selection-icon">
+                        <i data-lucide="crystal" style="width: 64px; height: 64px;"></i>
+                    </div>
+                    <h2 class="selection-title">Mineral Species Geochemistry</h2>
+                    <p class="selection-subtitle">Especies Minerales</p>
+                    <p class="selection-description">Inorganic geochemistry including Pourbaix (Eh-pH) diagrams for mineral stability fields, redox potential analysis, and aqueous geochemistry of mineral species.</p>
+                    <div class="selection-btn">
+                        <span>View Diagrams</span>
+                        <i data-lucide="arrow-right" style="width: 20px; height: 20px;"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Back Button -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="index.html" class="btn-nav" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: var(--terracotta-strong); color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
+                    <i data-lucide="arrow-left" style="width: 18px; height: 18px;"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tetakawi Rocks</h3>
+                <p>Bilingual Geologist</p>
+                <p>Mudlogging & Wellsite Geology</p>
+            </div>
+            <div class="footer-section">
+                <h3>Specialties</h3>
+                <p>Geophysical Analysis</p>
+                <p>Environmental Compliance</p>
+                <p>Geochemical Evaluation</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>lizbeth.avenita@gmail.com</p>
+                <p>United States & Mexico</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tetakawi Rocks. All rights reserved.</p>
+            <p>Designed with geological precision in the spirit of the Sonoran Desert</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

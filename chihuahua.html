@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihuahua State Geology - Lizbeth Avena-Hroblak</title>
+    <meta name="description" content="Chihuahua State Geology section - Under Maintenance">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="geochemistry-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i data-lucide="mountain" class="logo-icon"></i>
+                <span class="logo-text">Lizbeth Avena-Hroblak</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About Me</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#specialties" class="nav-link">Specialties</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="geochemistry.html" class="nav-link">Geochemistry</a>
+                <a href="chihuahua.html" class="nav-link">Chihuahua Geology</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Maintenance Section -->
+    <section class="geo-hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="geo-hero-content" style="text-align: center; padding: 2rem;">
+            <div class="selection-icon" style="margin: 0 auto 2rem;">
+                <i data-lucide="wrench" style="width: 80px; height: 80px; color: var(--terracotta-strong);"></i>
+            </div>
+            <h1 class="geo-hero-title">Chihuahua State Geology</h1>
+            <p class="geo-hero-subtitle">Geología del Estado de Chihuahua</p>
+            <p class="geo-hero-description" style="max-width: 600px; margin: 1.5rem auto;">
+                This section is currently under maintenance and will be available soon. We are working on bringing you detailed geological information about Chihuahua's diverse formations, mining districts, and geological heritage.
+            </p>
+            <div class="confidentiality-badge" style="margin-top: 2rem;">
+                <i data-lucide="clock" class="lock-icon"></i>
+                <span>Coming Soon</span>
+            </div>
+            <div class="nav-buttons" style="margin-top: 2rem;">
+                <a href="geochemistry.html" class="btn-nav btn-back-home">
+                    <i data-lucide="arrow-left" style="width: 18px; height: 18px;"></i>
+                    Back to Geochemistry
+                </a>
+                <a href="index.html" class="btn-nav" style="margin-left: 1rem;">
+                    <i data-lucide="home" style="width: 18px; height: 18px;"></i>
+                    Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="position: absolute; bottom: 0; width: 100%;">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lizbeth Avena-Hroblak</h3>
+                <p>Bilingual Geologist</p>
+                <p>Mudlogging & Wellsite Geology</p>
+            </div>
+            <div class="footer-section">
+                <h3>Specialties</h3>
+                <p>Geophysical Analysis</p>
+                <p>Environmental Compliance</p>
+                <p>Geochemical Evaluation</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>lizbeth.avenita@gmail.com</p>
+                <p>United States & Mexico</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lizbeth Avena-Hroblak. All rights reserved.</p>
+            <p>Designed with geological precision in the spirit of the Sonoran Desert</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navMenu.classList.toggle('active');
+                    
+                    const menuIcon = navToggle.querySelector('.menu-icon');
+                    if (menuIcon) {
+                        if (navMenu.classList.contains('active')) {
+                            menuIcon.setAttribute('data-lucide', 'x');
+                        } else {
+                            menuIcon.setAttribute('data-lucide', 'menu');
+                        }
+                        if (typeof lucide !== 'undefined') {
+                            lucide.createIcons();
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
