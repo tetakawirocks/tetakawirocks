@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineral Species Geochemistry - Tetakawi Rocks</title>
+    <meta name="description" content="Mineral species geochemistry including Pourbaix diagrams, Eh-pH stability fields, and major oxide radar plots. All data shown is fictional for confidentiality purposes.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="geoquimica_styles.css">
+</head>
+<body class="geochemistry-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i data-lucide="mountain" class="logo-icon"></i>
+                <span class="logo-text">Tetakawi Rocks</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About Me</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#specialties" class="nav-link">Specialties</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="geochemistry.html" class="nav-link">Geochemistry</a>
+                <a href="chihuahua.html" class="nav-link">Chihuahua Geology</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="geo-hero">
+        <div class="geo-hero-content">
+            <h1 class="geo-hero-title">Mineral Species Geochemistry</h1>
+            <p class="geo-hero-subtitle">Inorganic Chemistry & Stability Diagrams</p>
+            <p class="geo-hero-description">Advanced geochemical analysis of mineral species including Eh-pH stability fields, major oxide compositions, and aqueous geochemistry</p>
+            <div class="confidentiality-badge">
+                <i data-lucide="lock" class="lock-icon"></i>
+                <span>All data shown is fictional for confidentiality purposes</span>
+            </div>
+            <div class="nav-buttons">
+                <a href="geoquimica.html" class="btn-nav btn-back-home">
+                    <i data-lucide="file-coal" style="width: 18px; height: 18px;"></i>
+                    Coal Geochemistry
+                </a>
+                <a href="geochemistry.html" class="btn-nav btn-back-home" style="margin-left: 1rem;">
+                    <i data-lucide="arrow-left" style="width: 18px; height: 18px;"></i>
+                    Back
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Pourbaix Diagrams (Eh-pH) -->
+    <section class="geo-section geo-section-alt">
+        <div class="container">
+            <div class="geo-text-container">
+                <h2 class="geo-section-title">Pourbaix Diagrams (Eh-pH)</h2>
+                
+                <div class="geo-image-container">
+                    <img src="eh_ph_diagram.png" alt="Eh-pH Diagram - Iron System" class="geo-main-image">
+                    <span class="geo-image-caption">Pourbaix diagram for the Fe-H₂O system showing iron species stability fields as a function of redox potential (Eh) and pH</span>
+                </div>
+                
+                <p class="geo-text">
+                    Pourbaix diagrams, also known as Eh-pH diagrams, are fundamental tools in geochemistry and corrosion science. These diagrams map the stability fields of different chemical species as a function of redox potential (Eh) and pH, providing crucial insights into mineral stability and aqueous geochemistry.
+                </p>
+                <p class="geo-text">
+                    <strong>Fundamental Concepts:</strong>
+                </p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Eh (Redox Potential):</strong> Measured in volts, represents the tendency of a species to gain electrons (reduce) or lose electrons (oxidize). Positive Eh indicates oxidizing conditions, negative Eh indicates reducing conditions.</p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>pH:</strong> Measure of hydrogen ion concentration, ranging from acidic (low pH) to alkaline (high pH) conditions.</p>
+                <p class="geo-text" style="margin-bottom: 24px;"><strong>Stability Fields:</strong> Regions where specific aqueous species or minerals are thermodynamically stable.</p>
+                <p class="geo-text">
+                    <strong>Construction Methodology:</strong>
+                </p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Half-cell Reactions:</strong> Reactions are written with electrons (e⁻) on the left for reduction or right for oxidation</p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Nernst Equation:</strong> E = E° - (RT/nF)ln(Q) - Relates cell potential to reaction quotient</p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Gibbs Free Energy:</strong> ΔG° = -nFE° - Used to calculate standard potentials from thermodynamic data</p>
+                <p class="geo-text" style="margin-bottom: 24px;"><strong>Mass Action Law:</strong> K = [products]/[reactants] - Defines equilibrium constants</p>
+                <p class="geo-text">
+                    <strong>Key Boundary Lines:</strong>
+                </p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>O₂/H₂O Line:</strong> Upper boundary separating oxidizing from reducing conditions (O₂ + 4H⁺ + 4e⁻ → 2H₂O)</p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>H⁺/H₂ Line:</strong> Lower boundary at Eh = 0 - (pH dependent): 2H⁺ + 2e⁻ → H₂</p>
+                <p class="geo-text" style="margin-bottom: 24px;"><strong>Species-Dependent Lines:</strong> Lines where iron species transform (Fe²⁺ ↔ Fe³⁺, Fe ↔ Fe²⁺, precipitation reactions)</p>
+                <p class="geo-text">
+                    <strong>Iron System Example:</strong>
+                </p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Fe²⁺/Fe³⁺:</strong> Fe³⁺ + e⁻ → Fe²⁺ (depends on Eh only, vertical line)</p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Fe/Fe²⁺:</strong> Fe²⁺ + 2e⁻ → Fe (metal dissolution)</p>
+                <p class="geo-text" style="margin-bottom: 12px;"><strong>Fe(OH)₃ precipitation:</strong> Fe³⁺ + 3H₂O ↔ Fe(OH)₃ + 3H⁺ (pH-dependent)</p>
+                <p class="geo-text" style="margin-bottom: 24px;"><strong>Fe²⁺ stability:</strong> Extends into reducing conditions at neutral to alkaline pH</p>
+                <p class="geo-text">
+                    <strong>Applications:</strong> Corrosion prediction, mineral processing, environmental geochemistry, water-rock interactions, and ore deposit genesis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <!-- Back to Top Button -->
+    <div class="container" style="text-align: center; padding: 2rem 1rem;">
+        <a href="#" class="btn-nav btn-back-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            <i data-lucide="arrow-up" style="width: 18px; height: 18px;"></i>
+            Back to Top
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tetakawi Rocks</h3>
+                <p>Bilingual Geologist</p>
+                <p>Mudlogging & Wellsite Geology</p>
+            </div>
+            <div class="footer-section">
+                <h3>Specialties</h3>
+                <p>Geophysical Analysis</p>
+                <p>Environmental Compliance</p>
+                <p>Geochemical Evaluation</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>lizbeth.avenita@gmail.com</p>
+                <p>United States & Mexico</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tetakawi Rocks. All rights reserved.</p>
+            <p>Designed with geological precision in the spirit of the Sonoran Desert</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navMenu.classList.toggle('active');
+                    
+                    // Toggle icon
+                    const menuIcon = navToggle.querySelector('.menu-icon');
+                    if (menuIcon) {
+                        if (navMenu.classList.contains('active')) {
+                            menuIcon.setAttribute('data-lucide', 'x');
+                        } else {
+                            menuIcon.setAttribute('data-lucide', 'menu');
+                        }
+                        if (typeof lucide !== 'undefined') {
+                            lucide.createIcons();
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
