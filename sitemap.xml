@@ -20,4 +20,8 @@
     <loc>https://tetakawirocks.com/mineral_geochemistry.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://tetakawirocks.com/gallery.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
